@@ -87,7 +87,7 @@ function mainFunction() {
     timerCompleted.load();
     startAudio.play();
     document.getElementById("clickMe").innerHTML = "PAUSE";
-    stop = setInterval(countDown, 100);
+    stop = setInterval(countDown, 1000);
   }
   return;
 }
