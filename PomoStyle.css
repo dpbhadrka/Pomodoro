@@ -170,3 +170,135 @@ a{
     /* font-weight: 500; */
     font-size: 26px;
 }
+
+@media only screen and (max-width:580px){
+    a span{
+       display: none;
+   }
+
+}
+
+
+@media only screen and (max-width:431px){
+   .Timer{
+       font-size: 70px;
+   }
+   
+   .subContent{
+       width: 90%;
+       margin: auto;
+   }
+   .about {
+       margin-left: 100px;
+   }
+}
+
+
+@media only screen and (max-width:340px){
+   .about{
+    display: none;
+   
+   }
+   .options a{
+       padding: 7px;
+   }
+
+   .Timer{
+       font-size: 60px;
+   }
+
+   .navbar{
+       font-size: 25px;
+   }
+
+   .logo{
+       height: 20px;
+       width: 20px;
+   }
+}
+
+@media only screen and (max-width:250px){
+  .options a{
+   padding: 7px;
+   margin: 6px;
+   font-size: 20px;
+   }
+
+   
+   body{
+       margin: 0px;
+   }
+   
+   .Content{
+       width: 100%;
+       /* margin: 0px; */
+   }
+   
+   
+   #clickMe{
+       font-size: 15px;
+   }
+}
+
+@media only screen and (max-width:210px){
+   
+   /* #sortname{
+       display: none;
+   } */
+   
+   .Timer{
+       font-size: 40px;
+   }
+   
+   .options a{
+       font-size: 16px;
+       margin: 5px;
+       padding: 5px;
+   }
+   
+   
+   #clickMe{
+       font-size: 12px;
+   }
+
+   .quote{
+       font-size: 20px;
+   }
+}
+
+@media only screen and (max-width:160px){
+  .navbar{
+   justify-content: center;
+  }
+
+  #sortname{
+   display: inline;
+  }
+
+  .quote{
+   display: block;
+   writing-mode: vertical-rl;
+   margin: 20px auto auto auto;
+   font-size: 25px;
+  }
+
+  #clickMe{
+   display: none;
+  }
+
+  #clickMe2{
+   display: block;
+   height: 20px;
+   width: 20px;
+   margin: auto;
+  }
+}
+
+
+@media only screen and (max-width:145px){
+   .navbar,.options, #colon ,#Seconds{
+       display: none;
+
+   }
+
+}
