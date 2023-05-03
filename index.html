@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PomoClone</title>
+    <meta
+      name="description"
+      content="PomoClone is a simple and intuitive Pomodoro Timer that helps you improve your focus and productivity. Try it now for free!"
+    />
+    <meta
+      name="keywords"
+      content="pomodoro timer, focus, productivity, time management, study, work, task, tool"
+    />
+
+    <link rel="shortcut icon" href="/mainLogo.png" type="image/jpeg" />
+    <link rel="stylesheet" href="PomoStyle.css" />
+  </head>
+
+  <body>
+    <div class="Content">
+      <header>
+        <div class="navbar">
+          <div class="ProjectName">
+            <img class="logo" src="PomoDoroLogo.png" alt="logo" />
+            <span id="ProjectTitle">Pomo<span id="sortname">Clone</span></span>
+          </div>
+          <div class="about">
+            <a href="aboutME.html" target="_blank">About</a>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="mainContent">
+          <div class="subContent">
+            <div class="options">
+              <a class="active" id="first" onclick="pomoDoro()"
+                >Pomo<span>doro</span></a
+              >
+              <a id="second" onclick="shortBreak()">Short <span>Break</span></a>
+              <a id="third" onclick="longBreak()">Long <span>Break</span></a>
+            </div>
+            <div class="Timer">
+              <span id="Minutes">25</span>
+              <span id="colon">:</span>
+              <span id="Seconds">00</span>
+            </div>
+
+            <div class="Action">
+              <button id="clickMe" onclick="mainFunction()">Start</button>
+              <img
+                src="playButton.png"
+                alt="StartButton"
+                onclick="mainFunction()"
+                id="clickMe2"
+              />
+            </div>
+          </div>
+
+          <div class="quote" id="quote">#Time to focus!</div>
+        </div>
+      </section>
+    </div>
+    <script src="PomoClone.js"></script>
+  </body>
+</html>
