@@ -1,7 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #0f182a;
     /* background-color: rgb(110, 44, 44); */
-    color: white;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
 }
 /* *{
     transition: 3s;
@@ -11,6 +16,7 @@ body{
     display: block;
     max-width: 630px;
     margin: 0 auto;
+    height: 100vh;
 }
 
 
@@ -38,7 +44,7 @@ body{
   /* background: linear-gradient(to right,#bf5050 40%, #11df56 60%); */
     color:#4cf284 ;
     padding: 5px 0px;
-    /* margin-bottom: 10px; */
+    /* font-weight: 500; */
 }
 
 .about{
@@ -46,7 +52,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     transition: 0.4s;
     cursor: pointer;   
     color: rgb(255, 255, 255);
@@ -57,7 +63,7 @@ body{
     box-shadow: 0px 0px 4px 1.5px rgb(146, 255, 134);
     background-color: rgba(9, 1, 121, 0.333);
     border-radius: 15px;
-    padding: 5px;
+    padding: 7px;
     margin: 0px;
 }
 
@@ -79,11 +85,6 @@ a{
 }
 
 
-#liveLine{
-    background-color: aqua;
-    width: 1%;
-    height: 100%;
-}
 
 .mainContent{
     margin-top: 10px;
@@ -110,6 +111,7 @@ a{
     display: flex;
     justify-content: space-evenly;
     font-size: 23px;
+    padding: 0px;
 }
 
 .options:hover > :not(:hover){
@@ -118,19 +120,21 @@ a{
 
 .active{
     background-color: rgb(16, 13, 59);
-    border-radius: 30%;
+    /* border-radius: %; */
     transition: 0.5s;
     /* border: 2px double rgba(255, 255, 255, 0.243); */
     cursor: pointer;   
     color: rgb(255, 255, 255);
     box-shadow: 0px 0px 4px 4px rgb(255, 255, 255);
-
+    /* padding: 5px; */
 }
 
 .Timer{
     font-size: 100px;
     margin: 30px 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Quicksand',Roboto Serif, serif; */
     font-weight: bold;
 }
 
@@ -170,26 +174,82 @@ a{
     font-size: 26px;
 }
 
-@media only screen and (max-width:550px){
-    /* a span{
-       display: none;
-   } */
 
-   .subContent{
-    /* width: 100%; */
-    max-width: 500px;
-
-   }
-
+.information{
+    background-color:rgb(255,255,255);
+    color:rgb(0,0,0);
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    padding-top:2rem;
+    
 }
 
-@media only screen and (max-width:471px){
+.aboutPomodoro{
+    display: flex;
+    flex-direction:column;
+    gap: 1.4rem;
+    max-width: 630px;
+    margin: 0 auto;
+    /* text-align:justify; */
+    font-size: 1.2rem;
+    padding-bottom: 4rem;
+}
+
+.aboutPomodoro a{
+    color: #db524d;
+    font-weight: 700;
+    margin:0px;
+    padding:0px;
+}
+
+.aboutPomodoro h2::first-letter{
+    content: '';
+    display: block;
+    /* margin: 0 auto; */
+    /* width: 24px; */
+    padding-top: 8px;
+    border-bottom: 4px solid #f05b56b1;
+    border-bottom-width:4px;
+    
+}
+
+
+
+/* For responsive */
+@media only screen and (max-width:550px){
+    /* a span{
+        display: none;
+    } */
+    
+    .subContent{
+        /* width: 100%; */
+        max-width: 500px;
+        
+    }
     
     .options{
         font-size: 1.2em;
         /* padding: px; */
         justify-content: space-around;
     }
+    .options:hover > :not(:hover){
+        opacity: 1;
+    }
+
+    .aboutPomodoro{
+        width: 90%;
+        margin: 0 auto;
+        font-size:0.9rem ;
+        /* text-align: justify; */
+    }
+    .aboutPomodoro p{
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width:471px){
+
     .options a{
         padding: 7px;
         
@@ -203,7 +263,7 @@ a{
 }
 
 
-@media only screen and (max-width:431px){
+@media only screen and (max-width:441px){
    .Timer{
        font-size: 70px;
    }
@@ -216,15 +276,25 @@ a{
    /* .about {
        margin-left: 100px;
    } */
+   .options {
+    font-size: 16px;
+    padding: 0;
+    /* margin: 0; */
+       /* padding: 7px; */
+   }
 }
 
 
 @media only screen and (max-width:344px){
-   .about a{
-    display: none;
-   
-   }
-
+    .about a{
+        display: none;
+        
+    }
+    
+    .options {
+     font-size: 25px;
+        /* padding: 7px; */
+    }
 
    .about a[id] {
     display: inline;
@@ -237,13 +307,15 @@ a{
         width: 30px;
     }
 
-   .options {
-    font-size: 25px;
-       /* padding: 7px; */
-   }
 
   .options span{
     display: none;
+   }
+   
+   .options{
+    font-size: 19px;
+    padding: 5px;
+    margin: 0px;
    }
 
    .Timer{
@@ -281,9 +353,13 @@ a{
    #clickMe{
        font-size: 15px;
    }
+
+   .information{
+    display: none;
+   }
 }
 
-@media only screen and (max-width:210px){
+@media only screen and (max-width:225px){
    
    /* #sortname{
        display: none;
@@ -295,10 +371,13 @@ a{
    
    .options a{
        font-size: 16px;
-       margin: 5px;
+       /* margin: 5px; */
        padding: 5px;
    }
    
+   .ProjectName{
+    font-weight: none;
+   }
    
    #clickMe{
        font-size: 12px;
@@ -306,6 +385,10 @@ a{
 
    .quote{
        font-size: 20px;
+   }
+
+   .about{
+    display: none;
    }
 }
 
@@ -340,10 +423,14 @@ a{
    width: 20px;
    margin: auto;
   }
+
+  .logo{
+    display: none;
+  }
 }
 
 
-@media only screen and (max-width:145px){
+@media only screen and (max-width:155px){
    .navbar, #colon ,#Seconds{
        display: none;
 
@@ -355,5 +442,4 @@ a{
    .options a{
     width: 70%;
    }
-
 }
