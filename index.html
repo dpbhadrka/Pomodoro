@@ -27,6 +27,7 @@
   </head>
 
   <body>
+    <!-- Pomodoro Timer: -->
     <div class="Content">
       <header>
         <div class="navbar">
@@ -43,8 +44,11 @@
         </div>
       </header>
 
+      <div class="progressLine">
+      </div>
+
       <section>
-        <div class="mainContent">
+        <div class="mainContent ">
           <div class="subContent">
             <div class="options">
               <a class="active" id="first" onclick="pomoDoro()"
@@ -73,10 +77,40 @@
           <div class="quote" id="quote">#Time to focus!</div>
         </div>
       </section>
+      <div class="progressLine">
+      </div>
+      <section name="To-Do-list">
+      <!-- To-Do list -->
+      <!-- work in progress. -->
+      <div class="toDoList">
+        <div class="addTask" onclick="displayPopUp()">
+          <img
+            src="Task-add-icon.png"
+            alt="Task-add-icon"
+            height="30"
+            width="30"
+          />
+          Add Task
+        </div>
+
+        <div class="popUp">
+          <input
+            type="text"
+            placeholder="What are you working for?"
+            id="text"
+          />
+          <div class="addCancleButton">
+            <button onclick="addTask()">Add</button>
+            <button onclick="cancle()">Cancle</button>
+          </div>
+        </div>
+        <div class="taskList"></div>
+      </div>
+      </section>
+
     </div>
 
-    <!-- To-Do list -->
-    <!-- work in progress. -->
+
 
     <!-- Information part: -->
     <div class="information" id="information">
@@ -113,6 +147,28 @@
               target="_blank"
               >Wikipedia</a
             >
+          </p>
+        </div>
+        <div>
+          <h2>How to use the Pomodoro Timer?</h2>
+          <p>
+            <ol>
+              <li><strong>Add tasks</strong> to work on today.</li>
+              <li><strong>Select a task</strong> to work on.</li>
+              <li><strong>Start timer</strong> and focus on the task for 25 minutes.</li>
+              <li><strong>Take a break</strong> for 5 minutes when the alarm ring.</li>
+              <li><strong>Iterate</strong> 3-5 until you finish the tasks.</li>
+            </ol>
+          </p>
+        </div>
+        <div>
+          <h2>Basic Features</h2>
+          <p>
+            <ul>
+              <li><strong> Estimate Finish Time: </strong> Get an estimate of the time required to complete your daily tasks.</li>
+              <li><strong> Add Templates:</strong> Save your repetitive tasks as templates and add them with just one click.</li>
+              <li><strong>Visual Reports:</strong> See how much time you've focused each day, week, and month.</li>
+            </ul>
           </p>
         </div>
       </div>
