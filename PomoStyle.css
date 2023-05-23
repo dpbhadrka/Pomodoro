@@ -265,7 +265,8 @@ a{
     justify-content: left;
     gap: 20px;
     padding: 20px 0px;
-    width: 100%;
+    width:90%;
+    text-align: justify;
     margin: 10px auto;
     font-size: 1.4em;
     padding: 10px;
