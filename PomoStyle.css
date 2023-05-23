@@ -331,6 +331,24 @@ a{
 }
 
 
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.footer p{
+    margin: 2px 0px;
+}
+
+.footer div:first-child{
+    display: flex;
+    gap: 10px;
+}
 
 /* For responsive */
 @media only screen and (max-width:550px){
@@ -392,6 +410,14 @@ a{
 }
 
 
+@media only screen and (max-width:370px){
+    .footer div:first-child{
+        flex-direction: column;  
+        gap: 0px;      
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media only screen and (max-width:344px){
     .about a{
         display: none;
@@ -468,6 +494,14 @@ a{
    .information{
     display: none;
    }
+   .footer{
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+   }
 }
 
 @media only screen and (max-width:225px){
@@ -503,7 +537,7 @@ a{
    }
 }
 
-@media only screen and (max-width:180px){
+@media only screen and (max-width:195px){
   .navbar{
    justify-content: center;
   }
@@ -524,6 +558,9 @@ a{
    font-size: 25px;
   }
 
+  .mainContent{
+    width: 100%;
+  }
   #clickMe{
    display: none;
   }
