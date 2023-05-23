@@ -316,6 +316,7 @@ a{
 .aboutPomodoro ol,ul{
     margin:0px;
     padding:0px 24px;
+    font-size: 1.2rem;
    
 }
 
@@ -353,7 +354,7 @@ a{
         margin: 0 auto;
         font-size:0.9rem ;
     }
-    .aboutPomodoro p{
+    .aboutPomodoro p, .aboutPomodoro ol,ul{
         font-size: 20px;
         text-align: justify;
     }
